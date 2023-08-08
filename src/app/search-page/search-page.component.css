@@ -1,0 +1,29 @@
+.search input{
+    border-style: none;
+    background-color: rgb(30, 32, 43) !important;
+    color: white;
+    padding: 20px 50px 20px 20px;
+    border-radius: 30px;
+}
+.search{
+    
+    width: 80%;
+    height: 60px;
+    margin: 50px auto;
+}
+.search button{
+    position: absolute;
+    right: 0.1%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 40px;
+    border-radius: 30px;    
+    width: 100px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 10, 10);
+    color: white;
+    border-style: none;
+}

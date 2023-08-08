@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <div class="row">
+        <div [routerLink]="['/movie', Movie.id]" *ngFor="let Movie of allmovies" class="col-3 mb-2">
+            <div class="movie">
+                <img [src]="'https://image.tmdb.org/t/p/w500/' + Movie.poster_path" class="w-100" alt="">
+                <h5 class="text-light">{{Movie.title}}:</h5>
+                <p class="text-light">{{Movie.overview| slice:0:100}} ....</p>
+            </div>
+        </div>
+    </div>
+</div>

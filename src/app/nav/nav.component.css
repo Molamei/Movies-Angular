@@ -1,0 +1,18 @@
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Optionally, you can style the logo text (if added) */
+  .logo-text {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 800;
+    
+  }
+  nav{
+    background-color: grey !important;
+  }
+  a{
+    color: rgb(47, 31, 31) !important;
+  }

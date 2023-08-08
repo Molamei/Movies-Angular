@@ -1,0 +1,29 @@
+<div id="foodinfo" class="mt-5 p-5">
+    <div class="container p-5">
+        <div class="row px-5">
+            <div class="col-md-4">
+                <div class="mainfood">
+                    <img class="w-100" [src]="'https://image.tmdb.org/t/p/w500/' + data.poster_path" alt="">
+                    <h2 class="text-center"></h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="info">
+                    <h3>{{data.title}}</h3>
+                    <h4>Genres :</h4>
+                    <div *ngFor="let genre of data.genres" class="btn btn-danger mr-3">{{genre.name}}</div>
+                    <h4>Production Companies :</h4>
+                    <p *ngFor="let company of data.production_companies">{{company.name}}</p>
+                    
+                    <div class="elements d-flex flex-wrap">
+                        
+        
+
+                    </div>
+                    
+                    <a target="_blank"  class="btn btn-danger ml-auto">Watch now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
