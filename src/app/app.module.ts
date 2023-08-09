@@ -13,7 +13,7 @@ import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'search', component: SearchPageComponent },
@@ -37,7 +37,8 @@ const routes: Routes = [
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule
   ],
   exports:[RouterModule],
   providers: [DataService,ErrorHandlerService],

@@ -9,3 +9,10 @@
         </div>
     </div>
 </div>
+
+<mat-paginator
+  [length]="data?.total_results"
+  [pageSize]="20"
+  
+  (page)="onPageChange($event)"
+></mat-paginator>
